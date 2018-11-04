@@ -2,12 +2,16 @@ import * as React from 'react';
 import ListFriend from "../Listfriend/listFriend"
 import Message from "../Message/message"
 import firebase from "firebase"
-import { showUser } from '../../Actions/callFirebase';
+import { showUser } from '../../Service/callFirebase';
+import {getAllFriends} from '../../Service/callFirebase';
+import {connect} from 'react-redux';
 class MainLayout extends React.Component {
     componentDidMount() {
         const currentUser=firebase.auth().currentUser;
         console.log(currentUser)
         showUser(currentUser.uid, currentUser.displayName, currentUser.email, currentUser.photoURL)
+
+        getAllFriends(this);
     }
     
     render() {
@@ -33,4 +37,4 @@ class MainLayout extends React.Component {
     }
 }
 
-export default MainLayout
+export default connect() (MainLayout)

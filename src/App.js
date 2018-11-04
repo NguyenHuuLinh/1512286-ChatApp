@@ -4,7 +4,7 @@ import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import Login from "./Component/Login/login"
 import MainLayout from "./Component/Dashboard/mainLayout"
-import {showUser} from "./Actions/callFirebase"
+// import {showUser} from "./Actions/callFirebase"
 // link deploy firebase: https://chatapp-firebase-51026.firebaseapp.com/
 firebase.initializeApp({
   apiKey: "AIzaSyAe2dlKUPHdQcbecaCUaeZUPgQtp1gsNSI",
