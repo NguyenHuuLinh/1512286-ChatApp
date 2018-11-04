@@ -1,0 +1,41 @@
+.message-frame-left {
+    margin: 2px 2px;
+    display: flex;
+    max-width: 500px;
+  }
+  
+  .message-frame-right {
+    margin: 2px 2px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .text-field {
+    display:inline-block;
+    border-radius: 20px;
+    width: auto;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 10px;
+    color: rgb(228, 100, 100);
+    font-family: Calibri;
+    clear: both;
+  }
+  
+  .text-field-left {
+    background-color: #D8E7F3;
+    color: cornflowerblue;
+  }
+  
+  .text-field-right {
+     background-color: #D8E7F3;
+  }
+  
+  .avatar {
+    height: 50px;
+    width: 50px;
+    background-color: #3B88C3;
+    border-radius: 50%;
+    float: left;
+  }
+  
