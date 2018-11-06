@@ -34,7 +34,7 @@ class Message extends React.Component {
                         </div>
                         <div class='text-frame'>
                             <div class='text-field text-field-left'>
-                                Hello 1
+                                Tinh nhắn 1
                              </div>
                         </div>
                     </div>
@@ -44,7 +44,30 @@ class Message extends React.Component {
                     <div class='message-frame-right'>
                         <div class='text-frame'>
                             <div class='text-field text-field-right'>
-                                Hello 2
+                                Tin nhắn 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class='message-frame-left'>
+                        <div>
+                            <img class='avatar' />
+                        </div>
+                        <div class='text-frame'>
+                            <div class='text-field text-field-left'>
+                                Tinh nhắn 1
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class='message-frame-right'>
+                        <div class='text-frame'>
+                            <div class='text-field text-field-right'>
+                                Tin nhắn 2
                             </div>
                         </div>
                     </div>

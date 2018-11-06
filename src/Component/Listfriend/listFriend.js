@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './listFriend.css';
+// import './listFriend.css';
 import Friend from './friend';
 import {connect} from 'react-redux';
 

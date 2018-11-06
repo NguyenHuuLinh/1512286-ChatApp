@@ -5,7 +5,7 @@ import {getListFriend} from '../Actions'
 export const showUser = (uid, name, email, avatar) =>{
     const dataUser= firebase.database().ref('/User' ).once('value').then(snapshot =>{
         const user = snapshot.val();
-
+        console.log(snapshot.val())
         const findFriend = user.filter( f =>{
             return f.id === uid ? {
                 ...f
@@ -27,7 +27,8 @@ export const showUser = (uid, name, email, avatar) =>{
 }
 
 export function getAllFriends(_this) {
-    firebase.database().ref('data/').once('value').then(snapshot=>{
+    firebase.database().ref('/User').once('value').then(snapshot=>{
+        console.log(snapshot.val())
         _this.props.dispatch(getListFriend(snapshot.val()));
     })
 }
