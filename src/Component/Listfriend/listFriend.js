@@ -8,7 +8,7 @@ class ListFriends extends Component {
     getAllFriends() {
         console.log(this.props.listFriend)
         return this.props.listFriend.map(f=>{
-            return <Friend name={f.name} photoURL={f.photoUrl}/>
+            return <Friend name={f.name} photoURL={f.avatar}/>
         })
     }
 
@@ -16,7 +16,7 @@ class ListFriends extends Component {
         return(
             <div className='list-friend-container'>
                 <div className='title-frame'>
-                    DANH SÁCH CHAT
+                    
                 </div>
                 <div className='list-friend-frame'>
                     {this.getAllFriends()}
